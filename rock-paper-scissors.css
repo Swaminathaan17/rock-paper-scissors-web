@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#111827;
+    color:white;
+    font-family:Arial, sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    text-align:center;
+    width:90%;
+    max-width:900px;
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+.scoreboard{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    font-size:24px;
+    margin-bottom:30px;
+}
+
+.arena{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+    margin-bottom:30px;
+}
+
+.hand{
+    font-size:120px;
+}
+
+.vs{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+button{
+    padding:12px 24px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.result{
+    margin-top:25px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.taunt{
+    margin-top:10px;
+    color:#9ca3af;
+}
+
+.shake{
+    animation:shake 0.5s infinite;
+}
+
+@keyframes shake{
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
